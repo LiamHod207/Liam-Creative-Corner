@@ -1,0 +1,202 @@
+/* ============================================================
+   WEBSITE STYLESHEET — READ FIRST
+
+   This file controls the look of your ENTIRE website.
+   All pages (index, about, gallery, contact) use this file.
+
+   ✔ You ARE expected to edit this file in Lesson 5.5
+   ✔ Change values (fonts, colours, spacing) — not structure
+   ✔ Save often and refresh your browser to see changes
+
+   SAFE TO EDIT:
+   - font-family
+   - font-size
+   - colors (color, background-color)
+   - spacing (margin, padding)
+   - borders, border-radius, box-shadow
+   - hover effects
+
+   DO NOT EDIT (yet):
+   - layout structure rules
+   - display: flex / grid on main layout containers
+   - widths that control navigation placement
+   - class or selector names
+
+   RULES:
+   - Make ONE change at a time
+   - Refresh the browser after every change
+   - If something breaks, undo your last change
+
+   Need help?
+   Use W3Schools:
+   https://www.w3schools.com/css/
+
+   ============================================================ */
+
+   /* ==================================================
+   GLOBAL RESET + BASE
+   ================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   HEADER + TOP NAV
+   ================================================== */
+
+header {
+  background-color: #003678;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+header h1 {
+  margin-bottom: 0.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+nav {
+  background-color: #00165d;
+  padding: 0.75rem 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.25rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   MAIN CONTENT
+   ================================================== */
+
+main {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  clear: both;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+main h4 {
+  text-decoration: underline;
+}
+
+.art-left {
+  gap: 20px;
+  padding-left: 30px;
+  display: flex;
+}
+
+.art-left-text {
+  padding-left: 5px;
+}
+
+.art-left-text h3{
+  text-align: center;
+  font-size: 40px;
+}
+
+.art-right {
+  gap: 20px;
+  padding-right: 30px;
+  display: flex;
+  float: right;
+  
+}
+
+.art-right img{
+  float: right;
+}
+
+.myself {
+  float: right;
+  border-radius: 6px;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  width: 25%;
+}
+
+.direction-left{
+  gap: 20px;
+  padding-left: 30px;
+  display: flex;
+}
+
+.direction-left-text{
+  padding-left: 30px;
+}
+
+.direction-right{
+  gap: 20px;
+  padding-right: 30px;
+  display: flex;
+  float: right;
+}
+
+.direction-right-text{
+  padding-right: 30px;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.title-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  clear: both;
+}
+
+/* ==================================================
+   STUDENT SAFE EDIT ZONE
+   ==================================================
+   ✔ Fonts
+   ✔ Colours
+   ✔ Spacing
+   ✔ Nav styling
+   ✖ Structural layout rules
+   ================================================== */

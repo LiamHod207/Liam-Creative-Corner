@@ -1,0 +1,212 @@
+/* ============================================================
+   WEBSITE STYLESHEET — READ FIRST
+
+   This file controls the look of your ENTIRE website.
+   All pages (index, about, gallery, contact) use this file.
+
+   ✔ You ARE expected to edit this file in Lesson 5.5
+   ✔ Change values (fonts, colours, spacing) — not structure
+   ✔ Save often and refresh your browser to see changes
+
+   SAFE TO EDIT:
+   - font-family
+   - font-size
+   - colors (color, background-color)
+   - spacing (margin, padding)
+   - borders, border-radius, box-shadow
+   - hover effects
+
+   DO NOT EDIT (yet):
+   - layout structure rules
+   - display: flex / grid on main layout containers
+   - widths that control navigation placement
+   - class or selector names
+
+   RULES:
+   - Make ONE change at a time
+   - Refresh the browser after every change
+   - If something breaks, undo your last change
+
+   Need help?
+   Use W3Schools:
+   https://www.w3schools.com/css/
+
+   ============================================================ */
+
+   /* ==================================================
+   GLOBAL RESET + BASE
+   ================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("Content/podcast_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-y: 260px;
+  background-attachment: fixed;
+  background-color: #FBB021;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ==================================================
+   HEADER + TOP NAV
+   ================================================== */
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+header h1 {
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+nav {
+  background-color: #333;
+  padding: 0.75rem 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.25rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   MAIN CONTENT
+   ================================================== */
+
+main {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  clear: both;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+main h4 {
+  text-decoration: underline;
+}
+
+.podcast-intro {
+  gap: 20px;
+  padding-left: 30px;
+  display: flex;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #ff8f8f;
+  filter: drop-shadow(5px 5px 20px #35000079)
+}
+
+.podcast-intro img{
+  border-radius: 8px;
+}
+
+.intro-pod-text {
+  padding-left: 5px;
+  padding-right: 30px;
+}
+
+.intro-pod-text h3{
+  text-decoration: underline;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+  font-style: italic;
+}
+
+.intro-credits {
+  margin-left: 30px;
+  margin-right: 30px;
+  border-style: solid;
+  border-width: 4px;
+  border-top: 4px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+}
+
+#credits {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+ul{
+  margin-left: 40px;
+}
+
+.episode_section {
+    margin-left: 50px;
+    gap: 20px;
+    padding-left: 30px;
+    display: flex;
+}
+
+.episode_section h3{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.episode_section img{
+    border-radius: 8px;
+}
+
+audio{
+    margin-left: 20px;
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px 20px #0000005d)
+}
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  clear: both;
+}
+
+/* ==================================================
+   STUDENT SAFE EDIT ZONE
+   ==================================================
+   ✔ Fonts
+   ✔ Colours
+   ✔ Spacing
+   ✔ Nav styling
+   ✖ Structural layout rules
+   ================================================== */
