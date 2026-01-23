@@ -44,7 +44,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Content/Cinema_bg_2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Cinema_bg_2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
