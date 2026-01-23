@@ -48,6 +48,11 @@ body {
   background-color: #f4f4f4;
   color: #222;
   line-height: 1.6;
+  background-image: url('Content/call-bg-2.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* ==================================================
@@ -55,13 +60,26 @@ body {
    ================================================== */
 
 header {
-  background-color: #222;
+  display: flex;
+  background-color: #003678;
   color: #fff;
   padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+header img{
+  width: 120px;
+  height: 120px;
+  margin-right: 30px;
+  margin-left: 15%;
+  filter: drop-shadow(0px 0px 10px black)
 }
 
 header h1 {
   margin-bottom: 0.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  padding-top: 15px;
 }
 
 header p {
@@ -70,14 +88,18 @@ header p {
 }
 
 nav {
-  background-color: #333;
+  background-color: #00165d;
   padding: 0.75rem 1rem;
+  padding-left: 15%;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   margin-right: 1.25rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: larger;
 }
 
 nav a:hover {
@@ -89,7 +111,7 @@ nav a:hover {
    ================================================== */
 
 main {
-  background-color: #fff;
+  background-color: #b2ceff;
   padding: 2rem;
   max-width: 1100px;
   margin: auto;
@@ -109,8 +131,10 @@ main h4 {
 
 #calling {
   float: right;
-  width: 30%;
+  width: 35%;
   display: flex;
+  margin-top: 70px;
+  filter: drop-shadow(0px 0px 15px black)
 }
 
 .email-box {

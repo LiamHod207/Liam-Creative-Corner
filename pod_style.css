@@ -60,13 +60,26 @@ body {
    ================================================== */
 
 header {
-  background-color: #222;
+  display: flex;
+  background-color: #003678;
   color: #fff;
   padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+header img{
+  width: 120px;
+  height: 120px;
+  margin-right: 30px;
+  margin-left: 15%;
+  filter: drop-shadow(0px 0px 10px black)
 }
 
 header h1 {
   margin-bottom: 0.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  padding-top: 15px;
 }
 
 header p {
@@ -75,14 +88,18 @@ header p {
 }
 
 nav {
-  background-color: #333;
+  background-color: #00165d;
   padding: 0.75rem 1rem;
+  padding-left: 15%;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   margin-right: 1.25rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: larger;
 }
 
 nav a:hover {
@@ -94,11 +111,14 @@ nav a:hover {
    ================================================== */
 
 main {
-  background-color: #fff;
+  background-color: #ffdac2;
   padding: 2rem;
   max-width: 1100px;
   margin: auto;
   clear: both;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #daa94e;
 }
 
 main h2 {
@@ -111,6 +131,46 @@ section {
 
 main h4 {
   text-decoration: underline;
+}
+
+.back-to-gallery {
+  display: flex;
+  align-items: center;
+}
+
+.back-to-gallery img{
+  width: 40%;
+  transform: rotate(356deg);
+  filter: drop-shadow(0px 0px 5px black);
+  float: left;
+}
+
+.back-to-gallery-text{
+  text-align: left;
+  text-decoration: underline;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.back-to-gallery-subtext{
+  text-align: left;
+  margin-left: 37px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+  font-size: 60px
+}
+
+#title-text{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
 }
 
 .podcast-intro {
@@ -132,6 +192,7 @@ main h4 {
 .intro-pod-text {
   padding-left: 5px;
   padding-right: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .intro-pod-text h3{
@@ -140,6 +201,10 @@ main h4 {
   margin-bottom: 10px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
   font-style: italic;
+}
+
+.intro-pod-text p{
+  margin-top: 10px;
 }
 
 .intro-credits {
@@ -159,6 +224,7 @@ main h4 {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul{
@@ -170,6 +236,7 @@ ul{
     gap: 20px;
     padding-left: 30px;
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .episode_section h3{

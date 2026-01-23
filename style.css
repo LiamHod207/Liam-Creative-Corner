@@ -48,6 +48,10 @@ body {
   background-color: #f4f4f4;
   color: #222;
   line-height: 1.6;
+  background-image: url('Content/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* ==================================================
@@ -55,15 +59,26 @@ body {
    ================================================== */
 
 header {
+  display: flex;
   background-color: #003678;
   color: #fff;
   padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+header img{
+  width: 120px;
+  height: 120px;
+  margin-right: 30px;
+  margin-left: 15%;
+  filter: drop-shadow(0px 0px 10px black)
 }
 
 header h1 {
   margin-bottom: 0.25rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
+  padding-top: 15px;
 }
 
 header p {
@@ -74,12 +89,16 @@ header p {
 nav {
   background-color: #00165d;
   padding: 0.75rem 1rem;
+  padding-left: 15%;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   margin-right: 1.25rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: larger;
 }
 
 nav a:hover {
@@ -91,11 +110,12 @@ nav a:hover {
    ================================================== */
 
 main {
-  background-color: #fff;
+  background-color: #cfddff;
   padding: 2rem;
   max-width: 1100px;
   margin: auto;
   clear: both;
+  filter:drop-shadow(0px 0px 10px darkblue)
 }
 
 main h2 {
@@ -137,19 +157,29 @@ main h4 {
   float: right;
 }
 
-.myself {
-  float: right;
-  border-radius: 6px;
-  border-color: black;
-  border-style: solid;
-  border-width: 5px;
-  width: 25%;
-}
-
 .direction-left{
   gap: 20px;
   padding-left: 30px;
   display: flex;
+  border-style: double;
+  border-width: 10px;
+  padding: 20px;
+  background-color: lightblue;
+
+}
+
+.direction-left img{
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 8px;
+}
+
+.direction-left img:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
 }
 
 .direction-left-text{
@@ -169,6 +199,17 @@ main h4 {
 
 .title-text {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title-text h3 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.title-text p {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .title-image {
@@ -176,7 +217,25 @@ main h4 {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  animation: fadeIn 1s ease-in-out 0.5s forwards;
+
 }
+
+#click-text {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* how to add intro and continuous animation in html */
 
 /* ==================================================
    FOOTER

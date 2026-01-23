@@ -45,11 +45,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
+  background-color: #f4f4f4;
   color: #222;
   line-height: 1.6;
-  background-image: url('Content/museum-bg.jpg');
-  background-attachment: fixed;
+  background-image: url('Content/code-background.jpg');
+  background-size: cover;
 }
 
 /* ==================================================
@@ -108,9 +108,8 @@ nav a:hover {
    ================================================== */
 
 main {
-  background-color: #eeeeee;
+  background-color: #b7c9ff;
   padding: 2rem;
-  padding-bottom: 0rem;
   max-width: 1100px;
   margin: auto;
   clear: both;
@@ -118,6 +117,16 @@ main {
 
 main h2 {
   margin-bottom: 1rem;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.subtext {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 section {
@@ -128,152 +137,57 @@ main h4 {
   text-decoration: underline;
 }
 
-.title{
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif
-}   
-
-#title_1{
-  margin-bottom: 0px;
-  font-size: 200%;
-}
-
-#title_2{
-  font-size: 500%;
-}
-
-#title_3{
-  font-size: 450%;
-}
-
-#intro{
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  margin-bottom: 70px;
-  font-size: 20px;
-}
-
-.item1 {
-  position: relative; 
-}
-
-.hover-text1 { 
-  position: absolute; 
-  top: 0; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  background-color: rgba(159, 159, 159, 0.497);
-  padding: 5px 10px;
-  border-radius: 5px;
-  opacity: 0; 
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
-  z-index: 10;
-  margin-top: -30px; 
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.item1:hover .hover-text1 {
-  opacity: 1;
-  margin-top: -40px;
-}
-
-.item2 {
-  position: relative; 
-}
-
-.hover-text2 { 
-  position: absolute; 
-  top: 0; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  background-color: rgba(159, 159, 159, 0.497);
-  padding: 5px 10px;
-  border-radius: 5px;
-  opacity: 0; 
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
-  z-index: 10;
-  margin-top: -30px; 
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.item2:hover .hover-text2 {
-  opacity: 1;
-  margin-top: -40px;
-}
-
-.item3 {
-  position: relative; 
-}
-
-.hover-text3 { 
-  position: absolute; 
-  top: 0; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  background-color: rgba(159, 159, 159, 0.497);
-  padding: 5px 10px;
-  border-radius: 5px;
-  opacity: 0; 
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
-  z-index: 10;
-  margin-top: -30px; 
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.item3:hover .hover-text3 {
-  opacity: 1;
-  margin-top: -40px;
-}
-
-
-.column-image{
+.back-to-gallery {
   display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
 }
 
-.display-image{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0px;
+.back-to-gallery img{
+  width: 40%;
+  transform: rotate(356deg);
+  filter: drop-shadow(0px 0px 5px black);
+  float: left;
 }
 
-.display-link img{
-  width: 80%;
-  z-index: 0;
-  margin-left: auto;
-  margin-right: auto;
+.back-to-gallery-text{
+  text-align: left;
+  text-decoration: underline;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.back-to-gallery-subtext{
+  text-align: left;
+  margin-left: 37px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+iframe{
   display: block;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(0, 0, 53);
+  filter:drop-shadow(0px 0px 10px rgb(0, 0, 34))
 }
 
-.column-image img{
-  width:30%;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
+#desc{
+  margin-bottom: 20px;
+  margin-left: 50px;
+  font-weight: bold;
 }
 
-.display-link img{
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+#sub-title{
+  margin-left: 30px;
+  font-size: 30px;
+  text-decoration: underline;
 }
 
-.display-link:hover img{
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
-  transform: translateY(-5px);
-}
-
-
+/* how to add intro and continuous animation in html */
 
 /* ==================================================
    FOOTER
