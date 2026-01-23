@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YOUR SITE NAME • Gallery</title>
+  <title>Liam's Creative Corner • Gallery</title>
 
   <link rel="stylesheet" href="video_style.css">
 
@@ -19,6 +19,7 @@
   -->
 
   <header>
+    <img src = 'Content/Monogram.png'>
     <h1>Liam's Creative Corner!</h1>
   </header>
 
@@ -33,30 +34,35 @@
     <a href="contact.html">Contact</a>
   </nav>
   <main>
-    <a href="gallery.html">Back to Gallery</a>
-    <h2 class = title>The Cinema</h2>
+    <div class = 'back-to-gallery'>
+      <a href="gallery.html">
+        <img src = 'Content/gallery-door.png'>
+      </a>
+    </div> 
+    <p class = 'back-to-gallery-text'>Back to Gallery</p>
+    <p class = 'back-to-gallery-subtext'>(click door)</p>
+    
+    <h2 class = title>THE CINEMA</h2>
 
     <section>
-      <h3>My cards (minimum 6)</h3>
-      <p>Create at least 6 “cards” with a title + short description. Images can come later.</p>
+      <h3 class = 'intro-text'>Welcome to the Cinema! Grab yourselves a bucket of overpriced popcorn and any drink of your choosing as we explore my thrilling and entertaing videos I've made over the years!</h3>
     </section>
 
     <section>
       <h3 id = "videofont">Hunted House</h3>
-      <video alt = "Hunted House video" controls>
-        <source src="Content/Hunted House.mp4" type="video/mp4">
-      </video>
+      <iframe class = "video-display" width="800" height="450" src="https://www.youtube.com/embed/nl1XNWPZHdY?si=hpQ0AaA3Mh2Zs0kI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <!--https://youtu.be/nl1XNWPZHdY-->
+
       <div id = "descriptionfont">
         <h3>description:</h3>
         <p>In a small town, deep within their local forest, was a popular and broken house. Many rumors came from the house, with many unspeakable thinks taking place to those who decide to explore. Only fate will know what will happen to the victims of the house.</p>
-        <h4>Credits:</h4>
-        <p>*insert credits*</p>
       </div>
       <script src = "website.js"></script>
       <button type = "button" onclick = "showNotes1()" id = "button">Production Notes</button>
       <div id = "productionbox1">
         <h3>Production:</h3>
-        <p>*insert text about production here*</p>
+        <p>This was the first time I made a small comedy skit in Premire Pro. In Grade 9, me, Marcus and JJ made small horror skits and learned how to use filters. This project showed me how to make an improvised script and learn the basics of editing videos</p>
       </div>
         
     </section>
@@ -64,25 +70,38 @@
     <section>
       <div>
         <h3 id = "videofont">Misinformation PSA</h3>
-          <video width="640" alt = "Misinformation video" controls>
-            <source src="Content/Misinformation.mp4" type="video/mp4">
-          </video>
+          <iframe class = "video-display" width="800" height="450" src="https://www.youtube.com/embed/0lcW4UR2i_o?si=MVFD3W1qqvUQmm3d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <!--https://youtu.be/0lcW4UR2i_o-->
+
         <div id = "descriptionfont">
           <h3>description:</h3>
           <p>Millions of kids suffer from the real dangers of society... HOMEWORK!!! This PSA will show the REAL and LEGIT proof that homework is hurting your kids mentaly and physically!</p>
           <h4>Credits:</h4>
-          <p>*insert credits*</p>
+          <p id = 'credit-sub'>Sound effects:</p>
+          <ul>
+            <li>Jump scare - “Jump Scare C” by Fesliyan Studios (fesliyanstudios.com) - royalty free </li>
+            <li>Knocking - “Knocking on Window” by freesound_community (pixabay.com) - free to use </li>
+          </ul>
+          <p id = 'credit-sub'>Music</p>
+          <ul>
+            <li>PSA Music - “Happy Ambient Music” by 2BStudio (audiojungle.net) - royalty free</li>
+            <li>School Ambiance - “High School Hallway Ambiance #2” by SoundEffectLibrary (YouTube) - free to use </li>
+            <li>Sad Music - “Tears” by MX Audio Library (YouTube) - free to use </li>
+            <li>Suspense Music - “Tense Suspense Background Music” by DELOSound (pixabay.com) - free to use </li>
+            <li>Credits - “Growing Corporate” by Artur_Aravidi_Music (pixabay.com) - free to use</li>
+          </ul>
         </div>  
         <script src = "website.js"></script>
         <button type = "button" onclick = "showNotes2()" id = "button">Production Notes</button>
         <div id = "productionbox2">
           <h3>Production:</h3>
-          <p>*insert text about production here*</p>
+          <p>This video was the first time I made a script for Premire Pro. I also learned how to make storyboards and camera shots. This projects helped me learn how to make a production and learn more advanced options in Permire Pro</p>
         </div>
         
       </div>
     </section>
-
+<!--
     <section>
         <h3>Card 1</h3>
         <p>Description...</p>
@@ -92,6 +111,8 @@
     <p>*insert oc eating popcorn here*</p>
 
     <button type = "button" onclick = "DarkBG()">button to add to website if time pls</button>
+  -->
+  
   </main>
 
   
@@ -103,3 +124,20 @@
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"890e296de4ab443083747c565b7457a5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!--
+-----------------------------------------------
+TO DO LIST:
+-----------------------------------------------
+  -fonts
+  -information
+  -intoduction
+  -text colors
+  -better production button
+  -production box
+  -post videos on youtube instead
+
+  EXTRA:
+  -hidden page for bloopers
+  -bg goes dim
+-->
